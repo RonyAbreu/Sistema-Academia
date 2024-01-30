@@ -1,3 +1,8 @@
+/* Váriaveis */
+:root{
+    --cor-verde: rgb(86, 154, 69);
+}
+
 /* Geral */
 * {
     padding: 0;
@@ -32,7 +37,7 @@ label {
 input[type="text"],
 input[type="number"] {
     border: none;
-    border-bottom: 1px solid #1baa0e;
+    border-bottom: 1px solid var(--cor-verde);
     border-radius: 3px;
     color: #fff;
     padding: 6px 9px;
@@ -76,8 +81,8 @@ header h2 {
 }
 
 .header-form p {
-    color: rgb(86, 154, 69);
-    border-bottom: 2px solid rgb(86, 154, 69);
+    color: var(--cor-verde);
+    border-bottom: 2px solid var(--cor-verde);
     width: 120px;
     text-align: center;
     margin: 0 auto;
@@ -94,7 +99,7 @@ header h2 {
 }
 
 .titulo-verde {
-    color: rgb(86, 154, 69);
+    color: var(--cor-verde);
 }
 
 .info-principal {
@@ -126,7 +131,7 @@ header h2 {
 }
 
 input[type='radio'] {
-    accent-color: rgb(86, 154, 69);
+    accent-color: var(--cor-verde);
 }
 
 .radio label {
@@ -164,7 +169,7 @@ input[type='radio'] {
 }
 
 #custom-btn {
-    background-color: rgb(86, 154, 69);
+    background-color: var(--cor-verde);
     color: #fff;
     padding: 15px 30px;
     font-weight: bold;
