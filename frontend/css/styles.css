@@ -7,3 +7,61 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Header */
+header {
+    background-color: rgb(0, 5, 3);
+    height: 100px;
+    width: 100%;
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+}
+
+/* logo */
+.icon-logo {
+    height: 100px;
+    width: 140px;
+}
+
+/* navbar */
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+header nav ul li {
+    margin-left: 40px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+    border-radius: 1px;
+    padding-bottom: 10px;
+}
+
+header nav ul li a:hover {
+    color: rgb(86, 154, 69);
+    border-color: rgb(86, 154, 69);
+}
+
+/* botão navbar */
+.btn-cadastro {
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(86, 154, 69);
+    border-radius: 12px;
+}
+
+.btn-cadastro:hover {
+    color: #fff;
+    background-color: rgb(68, 133, 52);
+}
