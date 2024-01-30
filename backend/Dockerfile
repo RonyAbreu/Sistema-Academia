@@ -1,7 +1,9 @@
 FROM openjdk:17-jdk-slim
 
-COPY target/docker-0.0.1-SNAPSHOT.jar app.jar
+COPY . .
+
+RUN ./mvnw install
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+ENTRYPOINT ["java", "-jar", "target/docker-0.0.1-SNAPSHOT.jar"]

@@ -1,10 +1,10 @@
 package com.ronyelison.docker.model;
 
 import com.ronyelison.docker.dto.EnderecoDTO;
-import jakarta.persistence.*;
-
-import java.util.ArrayList;
-import java.util.List;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 @Entity(name = "tb_endereco")
 public class Endereco {
     @Id
@@ -13,8 +13,6 @@ public class Endereco {
     private String rua;
     private String bairro;
     private Integer numeroDaCasa;
-    @OneToMany(mappedBy = "endereco", fetch = FetchType.LAZY)
-    private List<Pessoa> pessoas = new ArrayList<>();
 
     public Endereco(){
     }
@@ -25,8 +23,8 @@ public class Endereco {
         this.numeroDaCasa = enderecoDTO.numeroDaCasa();
     }
 
-    public void adicionarPessoa(Pessoa pessoa){
-        this.pessoas.add(pessoa);
+    public Long getId() {
+        return id;
     }
 
     public String getRua() {

@@ -39,6 +39,10 @@ public class Pessoa {
                 temPressaoAlta);
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public String getNome() {
         return nome;
     }

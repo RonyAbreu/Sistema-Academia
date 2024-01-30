@@ -23,7 +23,6 @@ public class EnderecoService {
         Pessoa pessoa = pessoaRepository.findById(idPessoa).orElseThrow(() -> new RuntimeException("Pessoa não existe!"));
 
         pessoa.setEndereco(endereco);
-        endereco.adicionarPessoa(pessoa);
 
         return enderecoRepository.save(endereco);
     }
