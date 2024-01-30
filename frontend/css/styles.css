@@ -16,6 +16,7 @@ header {
     padding: 0 3rem;
     display: flex;
     align-items: center;
+    border-bottom: 2px solid rgb(86, 154, 69);
 }
 
 /* logo */
