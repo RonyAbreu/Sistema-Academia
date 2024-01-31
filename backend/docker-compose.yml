@@ -1,0 +1,36 @@
+version: '3.3'
+
+services:
+
+  db:
+    container_name: postgres-academia
+    image: postgres:latest
+    volumes:
+      - db_data:/var/lib/postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: postgres
+      POSTGRES_DB: academia
+    networks:
+      - academia-network
+    ports:
+      - "5432:5432"
+
+  sis-academia:
+    depends_on:
+      - db
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    restart: always
+    networks:
+      - academia-network
+
+volumes:
+  db_data: {}
+
+networks:
+  academia-network:
+    driver: bridge

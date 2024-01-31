@@ -2,7 +2,7 @@ FROM openjdk:17-jdk-slim
 
 COPY . .
 
-RUN ./mvnw install
+RUN ./mvnw clean package -DskipTests
 
 EXPOSE 8080
 
