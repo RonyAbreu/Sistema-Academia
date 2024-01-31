@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Sistema Academia</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" async></script>
+    <script src="../js/cadastro.js" async></script>
     <link rel="stylesheet" href="../css/cadastro.css">
 </head>
 <body>
@@ -21,35 +23,35 @@
                 <h1>Cadastro D<span class="titulo-verde">FIT</span></h1>
                 <form>
                     <div class="info-principal">
-                        <label for="nome">Qual o seu nome? <span class="required">*</span></label>
+                        <label>Qual o seu nome? <span class="required">*</span></label>
                         <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
-                        <label for="idade">Qual a sua idade? <span class="required">*</span></label>
+                        <label>Qual a sua idade? <span class="required">*</span></label>
                         <input type="number" name="idade" id="idade" placeholder="Sua idade" required>
-                        <label for="peso">Qual o seu peso? </label>
+                        <label>Qual o seu peso? </label>
                         <input type="text" name="peso" id="peso" placeholder="Seu peso">
-                        <label for="altura">Qual a sua altura? </label>
+                        <label>Qual a sua altura? </label>
                         <input type="text" name="altura" id="altura" placeholder="Sua altura">
                     </div>
                     <div class="radio">
-                        <label class="titulo" for="infoextras">Possuí diabete? <span class="required">*</span></label>
-                        <input type="radio" name="infoextras" value="diabete">
-                        <label class="space" for="diabete">Sim</label>
-                        <input type="radio" name="infoextras" value="diabete">
-                        <label for="diabete">Não</label>
+                        <label class="titulo">Possuí diabete? <span class="required">*</span></label>
+                        <input type="radio" name="infoextras" value="true" id="btn-sim-diabetes">
+                        <label class="space">Sim</label>
+                        <input type="radio" name="infoextras" value="false">
+                        <label>Não</label>
                     </div>
                     <div class="radio">
-                        <label class="titulo" for="infoextras2">Possuí pressão alta? <span class="required">*</span></label>
-                        <input type="radio" name="infoextras2" value="pressaoalta">
-                        <label class="space" for="pressaoalta">Sim</label>
-                        <input type="radio" name="infoextras2" value="pressaoalta">
-                        <label for="pressaoalta">Não</label>
+                        <label class="titulo">Possuí pressão alta? <span class="required">*</span></label>
+                        <input type="radio" name="infoextras2" value="true" id="btn-sim-pressao">
+                        <label class="space">Sim</label>
+                        <input type="radio" name="infoextras2" value="false" >
+                        <label>Não</label>
                     </div>
                     <div class="localizacao">
-                        <label for="rua">Rua:</label>
+                        <label>Rua:</label>
                         <input type="text" name="rua" id="rua" placeholder="A rua de onde você mora">
-                        <label for="bairro">Bairro:</label>
+                        <label>Bairro:</label>
                         <input type="text" name="bairro" id="bairro" placeholder="O bairro de onde você mora">
-                        <label for="numcasa">Número da casa</label>
+                        <label>Número da casa</label>
                         <input type="number" name="numcasa" id="numcasa" placeholder="O número da sua casa">
                     </div>
                     <div class="button">

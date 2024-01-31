@@ -11,6 +11,7 @@
     list-style: none;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    outline: none;
 }
 
 body {
@@ -37,12 +38,16 @@ label {
 input[type="text"],
 input[type="number"] {
     border: none;
-    border-bottom: 1px solid var(--cor-verde);
+    border-bottom: 2px solid var(--cor-verde);
     border-radius: 3px;
-    color: #fff;
+    color: #000;
     padding: 6px 9px;
     margin-bottom: 5px;
     width: 400px;
+}
+
+input:focus{
+    border-bottom: 2px solid blue;
 }
 
 /* header */
