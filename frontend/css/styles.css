@@ -204,3 +204,68 @@ main {
 #space-2 {
     margin-top: 40px;
 }
+
+/* Seção experiencia */
+.experiencia {
+    margin-top: 80px;
+}
+
+.experiencia h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1c1c1c;
+    text-align: center;
+    font-family: Gotham-Black,sans-serif;
+}
+
+.nome-verde {
+    color: rgb(68, 133, 52);
+}
+
+.conteudos {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.conteudo figure {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    outline: 2px solid transparent;
+    box-shadow: 0 3px 17px rgba(0,0,0,.1);
+    transition: 0.25s;
+    border: 2px solid #e2e8f0;
+    
+}
+
+.conteudo figure:hover {
+    border: 2px solid rgb(68, 133, 52);
+    border-radius: 10px;
+}
+
+.conteudo figure img {
+    width: 100%;
+    height: calc(100% - 40px);
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.conteudo figure figcaption {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Gotham,sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #1a1a1a;
+    padding-bottom: 10px;
+}
+
+/* Espaçamento único */
+#space-3 {
+    margin: 0 25px;
+}
