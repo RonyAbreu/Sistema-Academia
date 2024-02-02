@@ -41,14 +41,14 @@ input[type="number"] {
     border: none;
     border-bottom: 2px solid var(--cor-verde);
     border-radius: 3px;
-    color: #000;
+    color: #1a1a1a;
     padding: 6px 9px;
     margin-bottom: 5px;
     width: 400px;
 }
 
 input:focus{
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(50, 102, 38);
 }
 
 /* header */
