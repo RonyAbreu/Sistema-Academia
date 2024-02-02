@@ -176,9 +176,24 @@ main {
     padding-left: 55px;
 }
 
+.fazer-parte {
+    display: flex;
+    flex-direction: column;
+}
+
 .fazer-parte p,
 .fazer-parte a {
     padding-left: 55px;
+}
+
+.fazer-parte a {
+    color: rgb(68, 133, 52);
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.fazer-parte a:hover {
+    text-decoration: underline;
 }
 
 /* ESPAÇAMENTOS ÚNICOS */
