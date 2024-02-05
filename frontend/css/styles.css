@@ -8,8 +8,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html,
 body {
-    padding-bottom: 100px;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -176,9 +177,24 @@ main {
     padding-left: 55px;
 }
 
+.fazer-parte {
+    display: flex;
+    flex-direction: column;
+}
+
 .fazer-parte p,
 .fazer-parte a {
     padding-left: 55px;
+}
+
+.fazer-parte a {
+    color: rgb(68, 133, 52);
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.fazer-parte a:hover {
+    text-decoration: underline;
 }
 
 /* ESPAÇAMENTOS ÚNICOS */
@@ -188,4 +204,122 @@ main {
 
 #space-2 {
     margin-top: 40px;
+}
+
+/* Seção experiencia */
+.experiencia {
+    margin-top: 80px;
+}
+
+.experiencia h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1c1c1c;
+    text-align: center;
+    font-family: Gotham-Black,sans-serif;
+}
+
+.nome-verde {
+    color: rgb(68, 133, 52);
+}
+
+.conteudos {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.conteudo figure {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    outline: 2px solid transparent;
+    box-shadow: 0 3px 17px rgba(0,0,0,.1);
+    transition: 0.25s;
+    border: 2px solid #e2e8f0;
+    
+}
+
+.conteudo figure:hover {
+    border: 2px solid rgb(68, 133, 52);
+    border-radius: 10px;
+}
+
+.conteudo figure img {
+    width: 100%;
+    height: calc(100% - 40px);
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.conteudo figure figcaption {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Gotham,sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #1a1a1a;
+    padding-bottom: 10px;
+}
+
+/* Espaçamento único */
+#space-3 {
+    margin: 0 25px;
+}
+
+/* footer */
+footer {
+    margin-top: 50px;
+    background-color: rgb(17, 17, 17);
+    padding-bottom: 48px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer {
+    margin-top: 10px;
+}
+
+.copyright {
+    font-family: "FF Mark W05", Arial, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(126, 126, 126);
+    line-height: 140%;
+    max-width: 640px;
+    font-weight: 500;
+    margin: 0px auto;
+}
+
+.termos {
+    margin: 30px 0 10px
+}
+
+.termos ul {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.termos ul li a {
+    color: rgb(249, 249, 249);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease 0s;
+}
+
+.termos ul li a:hover {
+    color: rgb(68, 133, 52);
 }
