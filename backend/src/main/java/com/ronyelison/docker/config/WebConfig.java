@@ -7,12 +7,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-    @Value("${cors.origins}")
-    private String origins;
     @Override
-    public void addCorsMappings(CorsRegistry registry) {
+    public void addCorsMappings( CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins(origins)
+                .allowedOrigins("http://127.0.0.1:5501/")
                 .allowedHeaders("*")
                 .allowedMethods("*")
                 .allowCredentials(true);
