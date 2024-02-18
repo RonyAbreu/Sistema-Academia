@@ -8,10 +8,8 @@ services:
     volumes:
       - db_data:/var/lib/postgres
     restart: always
-    environment:
-      POSTGRES_PASSWORD: 1234
-      POSTGRES_USER: postgres
-      POSTGRES_DB: academia
+    env_file:
+      - secret.env
     networks:
       - academia-network
     ports:
