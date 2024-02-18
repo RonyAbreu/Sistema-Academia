@@ -30,15 +30,6 @@ public class Pessoa {
         this.temPressaoAlta = pessoaDTO.temPressaoAlta();
     }
 
-    public PessoaDTO converteParaDTO(){
-        return new PessoaDTO(nome,
-                idade,
-                peso,
-                altura,
-                temDiabetes,
-                temPressaoAlta);
-    }
-
     public Long getId() {
         return id;
     }

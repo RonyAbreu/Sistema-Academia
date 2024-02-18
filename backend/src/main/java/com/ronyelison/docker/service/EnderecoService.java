@@ -17,10 +17,9 @@ public class EnderecoService {
     @Autowired
     private PessoaRepository pessoaRepository;
 
-    @Transactional
     public Endereco cadastrarEndereco(EnderecoDTO enderecoDTO, Long idPessoa){
-        Endereco endereco = new Endereco(enderecoDTO);
         Pessoa pessoa = pessoaRepository.findById(idPessoa).orElseThrow(() -> new RuntimeException("Pessoa não existe!"));
+        Endereco endereco = new Endereco(enderecoDTO);
 
         pessoa.setEndereco(endereco);
 
