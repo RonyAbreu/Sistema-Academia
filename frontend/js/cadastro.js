@@ -36,6 +36,7 @@ function cadastrarCliente(){
         cadastraEndereco(id)
         alert('Cliente cadastrado com sucesso!')
         form.reset()
+        limpaBotoes()
     })
     .catch((err) => {
         console.log(err)
@@ -43,22 +44,53 @@ function cadastrarCliente(){
     })
 }
 
+inputSimDiabetes.addEventListener('click', ()=>{
+    inputSimDiabetes.setAttribute('checked', 'checked')
+})
+
+inputSimPressaoAlta.addEventListener('click', ()=>{
+    inputSimPressaoAlta.setAttribute('checked', 'checked')
+})
+
+function limpaBotoes(){
+    inputSimDiabetes.removeAttribute('checked')
+    inputSimPressaoAlta.removeAttribute('checked')
+}
+
 function criarCliente(){
     let nome = inputNome.value 
     let idade = inputIdade.value
     let peso = inputPeso.value
     let altura = inputAltura.value
+    let temDiabetes = ehDiabetico()
+    let temPressaoAlta = ehPressaoAlta()
 
     const cliente = {
         nome: nome,
         idade: idade,
         peso: peso,
         altura: altura,
-        temDiabetes: false,
-        temPressaoAlta: false
+        temDiabetes: temDiabetes,
+        temPressaoAlta: temPressaoAlta
     }
 
     return cliente
+}
+
+function ehDiabetico(){
+    if(inputSimDiabetes.getAttribute('checked') == null){
+        console.log('caiu no diabetes')
+        return false
+    }
+    return true
+}
+
+function ehPressaoAlta(){
+    if(inputSimPressaoAlta.getAttribute('checked') == null){
+        console.log('caiu no pressao')
+        return false
+    }
+    return true
 }
 
 function cadastraEndereco(idPessoa){
@@ -87,4 +119,3 @@ function criarEndereco(){
 
     return endereco
 }
-
