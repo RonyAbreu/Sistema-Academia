@@ -56,9 +56,27 @@ header {
     background-color: rgb(0, 5, 3);
     height: 160px;
     display: flex;
-    padding: 0 1rem;
+    padding: 0 2rem;
     align-items: center;
+    justify-content: space-between;
 }
+
+.home-nav {
+    margin-right: 1.5rem;
+    color: #fff;
+    font-size: 22px;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+    border-radius: 1px;
+    padding-bottom: 10px;
+}
+
+.home-nav:hover{
+    color: rgb(86, 154, 69);
+    border-color: rgb(86, 154, 69);
+}
+
+
 
 header h2 {
     color: #fff;
