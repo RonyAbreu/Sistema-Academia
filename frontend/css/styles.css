@@ -8,6 +8,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    line-height: 1.5;
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -64,8 +68,9 @@ header nav ul li a:hover {
     border: none;
     padding: 10px 20px;
     background-color: rgb(86, 154, 69);
-    border-radius: 12px;
+    border-radius: 26px;
 }
+
 
 .btn-cadastro:hover {
     color: #fff;
@@ -271,6 +276,56 @@ main {
     margin: 0 25px;
 }
 
+/* Aréa e-mail */
+.info-email {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.info-email p {
+    font-family: Gotham-Medium,sans-serif;
+    font-size: 22px;
+    color: #656565;
+    font-weight: inherit;
+    letter-spacing: 1px;
+}
+
+.info-email form {
+    margin-top: 25px;
+}
+
+.info-email form input[type="email"] {
+    width: 100%;
+    max-width: 465px;
+    padding: 12px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 0;
+    font-family: Gotham,sans-serif;
+    font-size: 15px;
+    color: #8d8d8d;
+}
+
+.info-email form input[type="email"]::placeholder {
+    letter-spacing: 1px;
+}
+
+.info-email form input[type="submit"] {
+    margin-left: 20px;
+    border: none;
+    background-color: rgb(86, 154, 69);
+    border-radius: 26px;
+    font-size: 18px;
+    line-height: 21px;
+    width: 100px;
+    padding: 12px 18px;
+    color: #1c1c1c!important;
+    cursor: pointer;
+}
+
+.info-email form input[type="submit"]:hover {
+    background-color: rgb(68, 133, 52);
+}
 /* footer */
 footer {
     margin-top: 50px;
@@ -285,11 +340,17 @@ footer {
     align-items: center;
 }
 
+.icon-logo-2 {
+    height: 200px;
+    width: 280px;
+}
+
 .logo-footer {
     margin-top: 10px;
 }
 
 .copyright {
+    border-top: 1px solid #fff;
     font-family: "FF Mark W05", Arial, sans-serif;
     text-align: center;
     font-size: 13px;
@@ -298,6 +359,8 @@ footer {
     max-width: 640px;
     font-weight: 500;
     margin: 0px auto;
+    border-bottom: 1px solid #fff;
+    padding: 35px 0;
 }
 
 .termos {
