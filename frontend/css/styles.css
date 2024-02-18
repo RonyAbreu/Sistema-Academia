@@ -340,11 +340,17 @@ footer {
     align-items: center;
 }
 
+.icon-logo-2 {
+    height: 200px;
+    width: 280px;
+}
+
 .logo-footer {
     margin-top: 10px;
 }
 
 .copyright {
+    border-top: 1px solid #fff;
     font-family: "FF Mark W05", Arial, sans-serif;
     text-align: center;
     font-size: 13px;
@@ -353,6 +359,8 @@ footer {
     max-width: 640px;
     font-weight: 500;
     margin: 0px auto;
+    border-bottom: 1px solid #fff;
+    padding: 35px 0;
 }
 
 .termos {
