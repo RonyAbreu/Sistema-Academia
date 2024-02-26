@@ -79,7 +79,6 @@ function criarCliente(){
 
 function ehDiabetico(){
     if(inputSimDiabetes.getAttribute('checked') == null){
-        console.log('caiu no diabetes')
         return false
     }
     return true
@@ -87,7 +86,6 @@ function ehDiabetico(){
 
 function ehPressaoAlta(){
     if(inputSimPressaoAlta.getAttribute('checked') == null){
-        console.log('caiu no pressao')
         return false
     }
     return true
