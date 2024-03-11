@@ -32,6 +32,8 @@ header {
 .icon-logo {
     height: 100px;
     width: 140px;
+    display: flex;
+    align-items: center;
 }
 
 /* navbar */
@@ -43,6 +45,7 @@ header nav ul {
     display: flex;
     width: 100%;
     justify-content: end;
+    align-items: center;
 }
 
 header nav ul li {
@@ -231,7 +234,7 @@ main {
 .conteudos {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 35px;
     width: 100%;
 }
 
@@ -361,6 +364,7 @@ footer {
     margin: 0px auto;
     border-bottom: 1px solid #fff;
     padding: 35px 0;
+    width: 90%;
 }
 
 .termos {
@@ -431,8 +435,6 @@ footer {
     #space-3 {
         margin: 0;
     }
-
-
 }
 
 /* 658px */
@@ -487,5 +489,120 @@ footer {
 
 /* 560px */
 @media (max-width: 560px) {
-    
+
+    .info-email form input[type="email"] {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .info-email p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding-bottom: 20px;
+    }
+
+    .copyright {
+        width: 90%;
+    }
+
+    .termos ul {
+        flex-direction: column;
+    }
+
+    .termos ul li {
+        margin-bottom: 20px;
+    }
+
+    #space-4 {
+        top: 0px;
+    }
+
+    #space-5 {
+        left: 0px;
+    }
+
+    #space-6 {
+        right: 0px;
+    }
+}
+
+/* 490px */
+/* Navbar */
+@media (max-width: 490px) {
+    header {
+        padding: 0 1.4rem;
+    }
+
+    .responsive {
+        position: absolute;
+        opacity: 0;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    header .icon-logo {
+        height: 60px;
+        width: 80px;
+    }
+}
+
+/* 450px */
+@media (max-width: 450px) {
+    .fas {
+        font-size: 22px;
+    }
+
+    .column-1 {
+        margin-right: 80px;
+    }
+
+    .endereco h3,
+    .endereco p,
+    .fazer-parte h3,
+    .fazer-parte p, 
+    .quadrado-verde h3 {
+        width: 95%;
+    }
+
+    .fazer-parte p,
+    .fazer-parte a,
+    .endereco p,
+    .quadrado-verde h3,
+    .horarios {
+        padding-left: 40px;
+    }
+
+    .experiencia h2 {
+        margin-top: 135px;
+    }
+
+    .conteudo figure {
+        width: 265px;
+        height: 215px;
+        margin-bottom: 15px;
+    }
+
+    .info-email form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-email form input[type="email"] {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+    .column-1 {
+        margin-right: 50px;
+    }
 }
